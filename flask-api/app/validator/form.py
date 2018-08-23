@@ -34,6 +34,12 @@ class UserEmailForm(Form):
         if User.query.filter_by(email=value.data).first:
             raise ValidationError()
 
+class BookSearchForm(Form):
+    q = StringField(validators=[DataRequired()])
+
+class TokenForm(Form):
+    token = StringField(validators=[DataRequired()])
+
 
 
 

@@ -34,3 +34,18 @@ class Forbidden(APIException):
     code =403
     error_code = 1004
     msg = 'forbidden, not in scope'
+
+class ServerError(APIException):
+    code = 500
+    msg = 'sorry, we made a mistake (*￣︶￣)!'
+    error_code = 999
+
+class Success(APIException):
+    code = 200
+    msg = 'happy!your are success!'
+    error_code = 222
+
+class DuplicateGift(APIException):
+    code = 121
+    msg = 'gift had gifted'
+    error_code = 2001
