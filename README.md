@@ -1,1 +1,2 @@
 # flask-test
+在congig中有一个secure.py文件，里面需要配置你的数据库SQLALCHEMY_DATABASE_URI和SECRET_KEY
